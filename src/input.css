@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.profile-image{
+    box-shadow: rgb(255 255 255 / 70%) 0px 0px 150px 18px;
+}
