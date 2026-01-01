@@ -17,6 +17,9 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --container-5xl: 64rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -186,6 +189,9 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
@@ -194,6 +200,9 @@
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .right-\[\%\] {
     right: %;
@@ -215,6 +224,9 @@
   }
   .right-\[20\%\] {
     right: 20%;
+  }
+  .right-\[20\] {
+    right: 20;
   }
   .right-\[30\%\] {
     right: 30%;
@@ -243,8 +255,20 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-\[20\%\] {
+    left: 20%;
+  }
+  .left-\[23\%\] {
+    left: 23%;
+  }
+  .left-\[25\%\] {
+    left: 25%;
+  }
   .left-\[50\%\] {
     left: 50%;
+  }
+  .float-right {
+    float: right;
   }
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
@@ -269,6 +293,9 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
@@ -386,12 +413,23 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-\[1px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-blue-500 {
     border-color: var(--color-blue-500);
+  }
+  .border-gray-700 {
+    border-color: var(--color-gray-700);
   }
   .bg-\[\#5b47cb\] {
     background-color: #5b47cb;
@@ -643,6 +681,11 @@
       margin-top: calc(var(--spacing) * 10);
     }
   }
+  .md\:mt-20 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -663,6 +706,16 @@
       width: calc(1/2 * 100%);
     }
   }
+  .md\:w-2xl {
+    @media (width >= 48rem) {
+      width: var(--container-2xl);
+    }
+  }
+  .md\:w-3xl {
+    @media (width >= 48rem) {
+      width: var(--container-3xl);
+    }
+  }
   .md\:w-5 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 5);
@@ -681,6 +734,11 @@
   .md\:w-fit {
     @media (width >= 48rem) {
       width: fit-content;
+    }
+  }
+  .md\:w-xl {
+    @media (width >= 48rem) {
+      width: var(--container-xl);
     }
   }
   .md\:max-w-5xl {
