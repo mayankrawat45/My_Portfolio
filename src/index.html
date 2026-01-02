@@ -1,80 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Mayank Singh Rawat showcasing skills, projects, and certifications.">
+    <meta name="description"
+        content="Portfolio website of Mayank Singh Rawat showcasing skills, projects, and certifications.">
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Mayank Singh Rawat | Portfolio</title>
 </head>
+
 <body class="bg-black text-white pt-16 ">
     <header class=" fixed top-0 md:my-5 w-full ">
-        <nav class="md:bg-[#27272A] md:h-12 md:text-sm md:font-semibold md:px-10 md:mx-auto md:flex text-[#919191fa] md:w-5xl md:rounded-2xl md:items-center md:justify-between">
+        <nav
+            class="md:bg-[#27272A] md:h-12 md:text-sm md:font-semibold md:px-10 md:mx-auto md:flex text-[#919191fa] md:w-5xl md:rounded-2xl md:items-center md:justify-between">
             <div class="logo">
                 <h2 class="md:text-xl md:font-medium ">Mayank <span class="text-[#5b47cb] ">Rawat</span></h2>
             </div>
             <ul class="md:flex gap-4 mx-6">
-                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#home">Home</li></a>
-                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#about">About</li></a>
-                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#skills">Skills</li></a>
-                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#services">Services</li></a>
-                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#contact">Contact</li></a> 
+                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#home">Home</li>
+                </a>
+                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#about">About</li>
+                </a>
+                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#skills">Skills
+                </li></a>
+                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#services">Services
+                </li></a>
+                <li class="hover:text-white md:px-3 md:py-1 hover:bg-[#3F3F46] rounded-xl "><a href="#contact">Contact
+                </li></a>
             </ul>
             <!-- night mode -->
-            <div class="">
-                <img class="md:w-5 invert " src="../assets/images/sun.svg" alt="">
+            <div class="md:flex gap-1.5">
+                <div
+                    class="md:px-2 md:py-1 hover:bg-amber-600 border-2 border-amber-800  md:rounded-lg hover:cursor-pointer">
+                    <img class="md:w-4 invert " src="../assets/images/sun.svg" alt="">
+                </div>
+                <div
+                    class="md:px-2 md:py-1 hover:bg-white invert hover:invert-0 border-2 border-amber-800  md:rounded-lg hover:cursor-pointer">
+                    <img class="md:w-4" src="../assets/images/moon.svg" alt="">
+                </div>
             </div>
         </nav>
     </header>
     <main class="md:max-w-[65%] md:mx-auto mt-20 ">
         <div class="home md:flex ">
             <div class="info md:w-1/2 md:flex md:flex-col md:justify-center">
-                <h1 class="md:font-bold text-2xl">Hi! &nbsp; I am <br><span class="md:text-5xl ">Mayank <span id="element"></span></span></h1>
-                <p class="md:mt-3 text-gray-500">A passionate Web Developer creating modern and responsive websites using tailwind and Mern Stack.</p>
+                <h1 class="md:font-bold text-2xl">Hi! &nbsp; I am <br><span class="md:text-5xl ">Mayank <span
+                            id="element"></span></span></h1>
+                <p class="md:mt-3 text-gray-500">A passionate Web Developer creating modern and responsive websites
+                    using tailwind and Mern Stack.</p>
                 <div class="social_icons invert md:flex md:gap-10 mt-3">
-                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img class="w-7 hover:cursor-pointer" src="../assets/icons/github.svg" alt="github-icon"></a>
-                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img class="w-7 hover:cursor-pointer" src="../assets/icons/instagram.svg" alt="instagram-icon"></a>
-                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img class="w-7 hover:cursor-pointer" src="../assets/icons/linkedin.svg" alt="linkedin-icon"></a>
-                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img class="w-7 hover:cursor-pointer" src="../assets/icons/twitter.svg" alt="twitter-icon"></a>
+                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img
+                            class="w-7 hover:cursor-pointer" src="../assets/icons/github.svg" alt="github-icon"></a>
+                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img
+                            class="w-7 hover:cursor-pointer" src="../assets/icons/instagram.svg"
+                            alt="instagram-icon"></a>
+                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img
+                            class="w-7 hover:cursor-pointer" src="../assets/icons/linkedin.svg" alt="linkedin-icon"></a>
+                    <a class="hover:text-orange-500 p-3 border-2 rounded-xl" href="#"><img
+                            class="w-7 hover:cursor-pointer" src="../assets/icons/twitter.svg" alt="twitter-icon"></a>
                 </div>
-                <div class="Cv-button border-2 border-blue-500 hover:border-none hover:bg-[#5B47CB] hover:border-blue-300 hover:text-black md:mt-4 md:font-bold md:px-4 md:py-2 rounded-2xl md:w-fit ">
+                <div
+                    class="Cv-button border-2 border-blue-500 hover:border-none hover:bg-[#5B47CB] hover:border-blue-300 hover:text-black md:mt-4 md:font-bold md:px-4 md:py-2 rounded-2xl md:w-fit ">
                     <a href="../assets/resume/Mayank singh rawat.pdf" download>Resume</a>
                 </div>
             </div>
             <div class="profile w-1/2 md:flex justify-end md:items-center">
-                <img class="profile-image md:w-[57%] md:h-[89%] md:rounded-2xl opacity-84 hover:scale-105 transition-scale duration-400 ease-linear" src="../assets/images/mayank.png" alt="">
+                <img class="profile-image md:w-[57%] md:h-[89%] md:rounded-2xl opacity-84 hover:scale-105 transition-scale duration-400 ease-linear"
+                    src="../assets/images/mayank.png" alt="">
             </div>
         </div>
         <div class="border border-gray-700 md:w-2xl md:mt-20"></div>
         <div id="about" class="mt-18 ">
-            <h1 class='md:text-5xl text-[#3c3c3d] md:font-bold'>About <span class="underline decoration-violet-700">Me</span></h1>
+            <h1 class='md:text-5xl text-[#3c3c3d] md:font-bold'>About <span
+                    class="underline decoration-violet-700">Me</span></h1>
             <div class="md:flex md:mt-10">
                 <div class="about-profile w-[20%] ">
-                <img class="rounded-xl" src="../assets/images/mayank.png " alt="">
-            </div>
-            <div class="md:mx-12">
-                <h2 class=" md:font-bold md:text-4xl md:[word-spacing:0.25rem]">Hello <span class="text-[#5b47cb]">!</span> I'm <span class="md:text-[#5b47cb] font-sans">Mayank Singh Rawat </span>I'm a full Stack Engineer.</h2>
-                <p class="text-gray-500 md:mt-5 ">I’m a web developer who enjoys building clean, responsive, and user-friendly applications. I like exploring modern technologies and continuously working on improving my skills.</p>
-                <div class="border-2 border-blue-500 hover:bg-[#4b34ce] hover:border-none hover:border-blue-300 hover:text-black md:mt-4 md:font-bold md:px-4 md:py-2 rounded-2xl md:w-fit "><button>Read More</button></div>
-            </div>
+                    <img class="rounded-xl" src="../assets/images/mayank.png " alt="">
+                </div>
+                <div class="md:mx-12">
+                    <h2 class=" md:font-bold md:text-4xl md:[word-spacing:0.25rem]">Hello <span
+                            class="text-[#5b47cb]">!</span> I'm <span class="md:text-[#5b47cb] font-sans">Mayank Singh
+                            Rawat </span>I'm a full Stack Engineer.</h2>
+                    <p class="text-gray-500 md:mt-5 ">I’m a web developer who enjoys building clean, responsive, and
+                        user-friendly applications. I like exploring modern technologies and continuously working on
+                        improving my skills.</p>
+                    <div
+                        class="border-2 border-blue-500 hover:bg-[#4b34ce] hover:border-none hover:border-blue-300 hover:text-black md:mt-4 md:font-bold md:px-4 md:py-2 rounded-2xl md:w-fit ">
+                        <button>Read More</button></div>
+                </div>
             </div>
         </div>
-        <div class="border border-gray-700 md:w-2xl md:mt-20"></div> 
-        <div class="skills" id="skills">
-            <h1 class="text-[#3c3c3d] md:text-5xl md:font-bold md:mt-10 ">Skill<span class="underline decoration-violet-700">s</span></h1>
+        <div class="border border-gray-700 md:w-2xl md:mt-20"></div>
+        <div class="skills " id="skills">
+            <h1 class="text-[#3c3c3d] md:text-5xl md:font-bold md:mt-10 ">Skill<span
+                    class="underline decoration-violet-700">s</span></h1>
+            <!-- progress bar -->
+            <div class="progress-bar md:max-w-[65%] md:mt-10  md:flex md:flex-col md:gap-3 ">
+                <div class="bar-container">
+                    <h3 class="md:text-lg md:font-semibold">Html</h3>
+                    <div class="md:p-1 rounded-lg percent-html relative bg-gray-500 w-fit text-xs">90%</div>
+                    <div class="bar md:mt-1.5">
+                        <div class="bar-progress html"></div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h3 class="md:text-lg md:font-semibold">Css</h3>
+                    <div class="md:p-1 rounded-lg percent-css relative bg-gray-500 w-fit text-xs">70%</div>
+                    <div class="bar md:mt-1.5">
+                        <div class="bar-progress css"></div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h3 class="md:text-lg md:font-semibold">Js</h3>
+                    <div class="md:p-1 rounded-lg percent-js relative bg-gray-500 w-fit text-xs ">80%</div>
+                    <div class="bar md:mt-1.5">
+                        <div class="bar-progress js"></div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h3 class="md:text-lg md:font-semibold">Mern Stack</h3>
+                    <div class="md:p-1 rounded-lg percent-mern relative bg-gray-500 w-fit text-xs">75%</div>
+                    <div class="bar md:mt-1.5">
+                        <div class="bar-progress mern"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+        <div class="border border-gray-700 md:w-5xl md:mt-20"></div>
+        <div class="services mt-10 ">
+            <h1 class="md:text-5xl md:font-bold text-[#3c3c3d] md:text-center">Service<span class="underline decoration-violet-700">s</span></h1>
+        </div>
+
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-    var typed = new Typed('#element', {
-      strings: ['Singh Rawat'],
-      typeSpeed: 70,
-    });
-  </script>
+        var typed = new Typed('#element', {
+            strings: ['Singh Rawat'],
+            typeSpeed: 70,
+        });
+    </script>
 </body>
+
 </html>
