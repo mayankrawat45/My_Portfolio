@@ -48,7 +48,7 @@
             </div>
         </nav>
     </header>
-    <main class="md:max-w-[65%] md:mx-auto mt-20 ">
+    <main class="md:mx-auto md:max-w-[65%] mt-20 ">
         <div class="home md:flex ">
             <div class="info md:w-1/2 md:flex md:flex-col md:justify-center">
                 <h1 class="md:font-bold text-2xl">Hi! &nbsp; I am <br><span class="md:text-5xl ">Mayank <span
@@ -72,8 +72,8 @@
                 </div>
             </div>
             <div class="profile w-1/2 md:flex justify-end md:items-center">
-                <img class="profile-image md:w-[57%] md:h-[89%] md:rounded-2xl opacity-84 hover:scale-105 transition-scale duration-400 ease-linear"
-                    src="../assets/images/mayank.png" alt="">
+                <img class="profile-image md:w-[57%] md:h-[89%] md:rounded-2xl opacity-84 hover:scale-105 transition-scale duration-400 ease-linear "
+                    src="../assets/images/mayank1.png" alt="">
             </div>
         </div>
         <div class="border border-gray-700 md:w-2xl md:mt-20"></div>
@@ -224,15 +224,76 @@
             <div class="form-container md:max-w-xl  mt-10 mx-auto rounded-2xl">
                 <form class="flex flex-col gap-2" >
                     <input class="bg-[#262628] focus: outline-none focus:ring-1 focus:ring-blue-500 md:p-2 rounded-md w-full" placeholder="Full Name" type="text">
-                    <input class="bg-[#262628] focus:outline-none focus:ring-1 focus:ring-blue-500 md:p-2 rounded-md w-full" placeholder="Email" type="text">
+                    <input class="bg-[#262628] focus:outline-none focus:ring-1 focus:ring-blue-500 md:p-2 rounded-md w-full" placeholder="Email" type="email" required>
                     <input class="bg-[#262628] focus:outline-none focus:ring-1 focus:ring-blue-500 md:p-2 rounded-md w-full" placeholder="Phone Number" type="tel">
                     <textarea class="bg-[#262628] rounded-md w-full h-36 py-3 p-2 focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="Your Message" name="" id=""></textarea>
-                    <button type="button" class="bg-[#262628] hover:bg-[#343435] cursor-pointer rounded-md font-bold p-2">Get In Touch</button>
+                    <button type="submit" class="bg-[#262628] hover:bg-[#343435] cursor-pointer rounded-md font-bold p-2">Get In Touch</button>
                 </form>
             </div>
         </div>
-
     </main>
+    <footer class="my-10 md:max-w-[65%] mx-auto">
+  <!-- Divider -->
+  <div class="bg-gray-600 h-px mb-10 opacity-20"></div>
+
+  <!-- Grid -->
+  <div class="text-gray-500 md:grid  md:grid-cols-[2fr_1fr] gap-20 items-start">
+
+    <!-- Column 1: Profile + Copyright -->
+    <div class="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
+      <div class="flex items-center gap-3 ">
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img
+            class="object-cover w-full h-full"
+            src="../assets/images/mayank1.png"
+            alt=""
+          />
+        </div>
+        <h6 class="text-lg font-medium text-white">Mayank Rawat</h6>
+      </div>
+
+      <p class="text-sm">
+        © 2026 Mayank Singh Rawat.
+        All Rights Reserved.
+      </p>
+    </div>
+
+    <!-- Column 2: Contact -->
+    <div class="flex flex-col gap-4 items-center md:items-start md:justify-self-end">
+
+      <!-- Phone -->
+      <a
+        href="tel:+917905803312"
+        class="flex items-center gap-4 hover:text-blue-500 transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24"
+             fill="currentColor"
+             class="w-6 h-6">
+          <path d="M6.62 10.79a15.054 15.054 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/>
+        </svg>
+        <span>+91 7905803312</span>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:rmayank451@gmail.com"
+        class="flex items-center gap-4 hover:text-blue-500 transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24"
+             fill="currentColor"
+             class="w-6 h-6">
+          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2 0 8 5 8-5H4Zm16 2.236-7.445 4.653a1 1 0 0 1-1.11 0L4 6.236V20h16V6.236Z"/>
+        </svg>
+        <span>rmayank451@gmail.com</span>
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
