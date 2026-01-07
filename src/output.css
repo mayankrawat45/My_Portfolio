@@ -282,6 +282,9 @@
   .h-36 {
     height: calc(var(--spacing) * 36);
   }
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
   .h-full {
     height: 100%;
   }
@@ -297,6 +300,9 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -305,6 +311,18 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
+  .w-58 {
+    width: calc(var(--spacing) * 58);
+  }
+  .w-62 {
+    width: calc(var(--spacing) * 62);
+  }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
   }
   .w-\[92\%\] {
     width: 92%;
@@ -368,6 +386,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -433,6 +454,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -634,10 +658,59 @@
       }
     }
   }
+  .hover\:bg-\[\#5b5b5f\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #5b5b5f;
+      }
+    }
+  }
+  .hover\:bg-\[\#232324\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #232324;
+      }
+    }
+  }
+  .hover\:bg-\[\#232324af\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #232324af;
+      }
+    }
+  }
+  .hover\:bg-\[\#232324bc\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #232324bc;
+      }
+    }
+  }
   .hover\:bg-\[\#343435\] {
     &:hover {
       @media (hover: hover) {
         background-color: #343435;
+      }
+    }
+  }
+  .hover\:bg-\[\#353537\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #353537;
+      }
+    }
+  }
+  .hover\:bg-\[\#23232400\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #23232400;
+      }
+    }
+  }
+  .hover\:bg-\[\#23232449\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #23232449;
       }
     }
   }
@@ -795,6 +868,11 @@
       width: calc(var(--spacing) * 62);
     }
   }
+  .md\:w-72 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 72);
+    }
+  }
   .md\:w-\[65\.4\%\] {
     @media (width >= 48rem) {
       width: 65.4%;
@@ -833,6 +911,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:content-between {
+    @media (width >= 48rem) {
+      align-content: space-between;
     }
   }
   .md\:items-center {
